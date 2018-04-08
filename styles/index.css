@@ -1,0 +1,226 @@
+
+/* Global */
+
+.panel{
+  background: transparent !important;
+}
+.panel-transparent {
+        background: transparent !important;
+    }
+
+
+    .jumbotron-pages {
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      color: white;
+      margin-bottom: 50px;
+    }
+
+.jumbotron {
+  z-index: -100;
+}
+
+/* Navigation */
+
+.navbar-nav>li>a:hover {
+  color: #F9DA93;
+}
+
+.navbar-nav>li>a {
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 12pt;
+  margin-right: 2px;
+  margin-left: 2px;
+  letter-spacing: .5px;
+  z-index: 100;
+}
+
+.dropdown-menu {
+  background-color: rgba(51, 51, 51, 0.9);
+}
+
+.dropdown-menu>a:hover {
+  background-color: #565656; /*#F9DA93  rgba(249, 218, 147, 0.9)*/
+  color: white;
+}
+
+@media (max-width: 576px) {
+  .navbar-nav {
+    padding: 15px;
+    background-color: #333333; /*#F9DA93  rgba(249, 218, 147, 0.9)*/
+    color: white;
+  }
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.flex-end {
+  justify-content: flex-end !important;
+}
+
+.navbar-toggler {
+  color: white;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+/* Header */
+
+
+.jumbotron-home {
+  background-image: url(../images/jumbotron_home.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  color: white;
+  z-index: -100;
+  top:0;
+}
+
+.jumbotron-title {
+  font-family: 'Oswald', serif;
+  font-size: 24pt;
+  padding-top: 40px;
+  padding-bottom: 5px;
+}
+
+.jumbotron-subtitle {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14pt;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+
+@media (min-width: 544px) {
+  .jumbotron-title {
+    font-size: 50pt;
+    padding-top: 40px;
+  }
+  .jumbotron-subtitle {
+    font-size: 12pt;
+  }
+}
+
+@media (min-width: 1000px) {
+  .jumbotron-title {
+    font-size: 85pt;
+    padding-top: 10px;
+  }
+  .jumbotron-subtitle {
+    font-size: 16pt;
+    letter-spacing: 9px;
+  }
+}
+
+
+
+/* Footer */
+
+.footer {
+/*  position: absolute; */
+  width: 100%;
+  Height: 90px;
+  left: 0;
+  bottom: 0;
+  background-color: #e8e8e8;
+  overflow: hidden;
+  padding-top: 30px;
+  color: white;
+}
+
+/* Facebook Icon for Footer */
+
+.a>.footer {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.fa {
+  padding-top: 10px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.fa-facebook, .fa-envelope {
+  padding-top: 7px;
+  background: white;
+  color: #e8e8e8;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  color: #e8e8e8;
+  text-decoration: none;
+}
+
+
+/* Home body */
+
+
+
+.parallax-founders-fg{
+  background-image: url(../images/founders_fg.png);
+  background-color: transparent !important;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 800px;
+}
+
+.parallax-founders-bg{
+  background-image: url(../images/founders_bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 800px;
+}
+
+/* Members */
+
+.jumbotron-members {
+  background-image: url(../images/jumbotron_members.jpg);
+}
+
+.body-members {
+  padding-bottom: 400px;
+}
+
+/* Rent */
+
+.jumbotron-rent {
+  background-image: url(../images/jumbotron_rent.jpg);
+}
+
+.body-rent {
+  padding-bottom: 400px;
+}
