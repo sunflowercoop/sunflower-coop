@@ -2,10 +2,10 @@
 /* Global */
 
 .panel{
-  background: transparent !important;
+  background: none !important;
 }
 .panel-transparent {
-        background: transparent !important;
+        background: rgba(0, 0, 0, 0) !important;
     }
 
 
@@ -187,13 +187,13 @@
 
 
 
-.parallax-founders-fg{
+/* .parallax-founders-fg{
   background-image: url(../images/founders_fg.png);
-  background-color: transparent !important;
+  background-color: red !important;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  height: 800px;
+  height: 1000px;
 }
 
 .parallax-founders-bg{
@@ -203,7 +203,7 @@
   background-position: center;
   background-attachment: fixed;
   height: 800px;
-}
+} */
 
 /* Members */
 
@@ -223,4 +223,21 @@
 
 .body-rent {
   padding-bottom: 400px;
+}
+
+
+
+.parallax-founders-fg {
+  background-image: url(../images/founders_fg.png);
+  height: 800px;
+  background-size: cover;
+}
+
+.parallax-founders-bg {
+  background-image: url(../images/founders_bg.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
 }
