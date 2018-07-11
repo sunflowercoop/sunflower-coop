@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <title>Gallery | Sunflower Co-op</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Farsan" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=BenchNine:300" rel="stylesheet">
+  <link href="../styles/animate.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link href="../styles/index.css" rel="stylesheet">
+  <!--from Lightbox Starter Files-->
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="../lightbox-gallery/css/lightbox.min.css">
+
+
+
+</head>
+
+<body>
+
+
+  <!-- navigation -->
+  <script>
+    $(function() {
+      $("#header").load("../includes/header.html");
+    });
+  </script>
+
+  <div id="header"></div>
+  <!-- /Navigation -->
+
+  <!-- jumbotron -->
+  <div class="jumbotron jumbotron-page jumbotron-fluid jumbotron-faq">
+    <!-- jumbotron title -->
+    <h1 id="page-header" class="display-1 text-center text-uppercase jumbotron-title animated fadeIn">Gallery</h1>
+  </div>
+
+  <script>
+  window.onscroll = function() {myFunction()};
+  function myFunction() {
+      if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
+          document.getElementById("page-header").className = "display-1 text-center text-uppercase jumbotron-title animated fadeOut";
+      } else {
+          document.getElementById("page-header").className = "display-1 text-center text-uppercase jumbotron-title animated fadeIn";
+      }
+  }
+  </script>
+  <!-- /jumbotron -->
+
+
+
+  <!-- body -->
+
+<div class="page-body">
+
+
+  <!--flex container holding sidebar and body content-->
+
+    <!-- / -->
+    <!--Collapse Button -->
+        <div class="page-sidebar">
+          <div>
+            <nav class="navbar-expand-sm" role="navigation">
+    <button type="button" class="page-navbar-toggler" data-toggle="collapse" data-target="#pageNavCollapse">
+<div style="display: flex; flex-direction: row; margin-bottom: 15px;"><div style="margin-right: 5px;"><i class="material-icons">menu</i></div>
+<div>Menu</div>
+</button>
+    <div class="collapse navbar-collapse" id="pageNavCollapse">
+      <!--flex container holding sidebar-->
+
+        <nav class="hidden-xs-down sidebar">
+          <h2>Present</h2>
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Photos</a>
+            </li>
+
+          </ul>
+          <h2 style="padding-top: 30px;">Archives</h2>
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Flyers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Documents</a>
+            </li>
+          </u>
+        </nav>
+      </div>
+    </nav>
+    </div>
+    </div>
+      <!-- / flex container holding sidebar-->
+      <!-- flex container holding body content -->
+      <div class="flex-column pl-4 flex-wrap body-members page-content">
+
+        <script src="../lightbox-gallery/js/lightbox-plus-jquery.min.js"></script>
+
+        <div id="wrapper">
+          <!--Gallery Row 1 Start -->
+          <section class="one-third">
+            <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
+          </section>
+          <!--Gallery Row 1 End -->
+
+          <!--Gallery Row 2 Start -->
+          <!--Gallery Row 2 End -->
+
+          <!--Gallery Row 3 Start -->
+          <!--Gallery Row 3 End -->
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+  <!-- footer -->
+  <!-- <script>
+    $(function() {
+      $("#footer").load("../includes/footer.html");
+    });
+  </script>
+
+  <div id="footer"></div> -->
+
+  <!-- /footer -->
+
+
+</html>
