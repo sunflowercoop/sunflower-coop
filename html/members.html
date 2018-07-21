@@ -11,6 +11,9 @@ layout: null
     $(function() {
       $("#head") .load("../includes/head.html");
     });
+    $(function() {
+      $("#header") .load("../includes/header.html");
+    });
   </script>
 
   <!-- Required meta tags -->
@@ -69,46 +72,22 @@ layout: null
   </script>
   <!-- /jumbotron -->
 
-  <!-- body -->
 
-  <!--flex container holding sidebar and body content-->
+
+
+  <!--Body-->
   <div class="page-body">
-    <!-- / -->
-    <!--Collapse Button -->
-        <div class="page-sidebar">
-          <div>
-            <nav class="navbar-expand-sm" role="navigation">
-    <button type="button" class="page-navbar-toggler" data-toggle="collapse" data-target="#pageNavCollapse">
-<i class="material-icons">menu</i>
-</button>
-    <div class="collapse navbar-collapse" id="pageNavCollapse">
-      <!--flex container holding sidebar-->
 
-        <nav class="hidden-xs-down sidebar">
-          <ul class="nav nav-pills flex-column">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Documents</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../rent.html">Pay Rent</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Calendar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Job Rotations</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Member Info</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </nav>
-    </div>
-    </div>
-      <!-- / flex container holding sidebar-->
-      <!-- flex container holding body content -->
+    <!--sidenav-->
+    <script>
+      $(function() {
+        $("#sidenav").load("../includes/members_sidenav.html");
+      });
+    </script>
+
+    <div id="sidenav"></div>
+
+
       <div class="flex-column pl-4 flex-wrap body-members page-content">
 
         <p>For all documents, go to <a href="https://www.dropbox.com/sh/xtm7c5mwi7biwr6/AACdr0BIdwR3ac6dpEMV30Yfa?dl=0" target="_blank">Sunflower's Dropbox.</a></p>

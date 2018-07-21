@@ -20,9 +20,11 @@
   <link href="../styles/index.css" rel="stylesheet">
   <!--from Lightbox Starter Files-->
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
   <link rel="stylesheet" href="../lightbox-gallery/css/lightbox.min.css">
+  <script src="js/jquery-1.7.2.min.js"></script>
+  <link href="../styles/lightbox.css" rel="stylesheet" />
 
 
 
@@ -42,20 +44,23 @@
   <!-- /Navigation -->
 
   <!-- jumbotron -->
-  <div class="jumbotron jumbotron-page jumbotron-fluid jumbotron-faq">
+  <div class="jumbotron jumbotron-page jumbotron-fluid jumbotron-gallery">
     <!-- jumbotron title -->
     <h1 id="page-header" class="display-1 text-center text-uppercase jumbotron-title animated fadeIn">Gallery</h1>
   </div>
 
   <script>
-  window.onscroll = function() {myFunction()};
-  function myFunction() {
+    window.onscroll = function() {
+      myFunction()
+    };
+
+    function myFunction() {
       if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
-          document.getElementById("page-header").className = "display-1 text-center text-uppercase jumbotron-title animated fadeOut";
+        document.getElementById("page-header").className = "display-1 text-center text-uppercase jumbotron-title animated fadeOut";
       } else {
-          document.getElementById("page-header").className = "display-1 text-center text-uppercase jumbotron-title animated fadeIn";
+        document.getElementById("page-header").className = "display-1 text-center text-uppercase jumbotron-title animated fadeIn";
       }
-  }
+    }
   </script>
   <!-- /jumbotron -->
 
@@ -63,90 +68,1262 @@
 
   <!-- body -->
 
-<div class="page-body">
+  <div class="page-body">
 
 
-  <!--flex container holding sidebar and body content-->
+    <!--sidenav-->
+    <script>
+      $(function() {
+        $("#sidenav").load("../includes/gallery_sidenav.html");
+      });
+    </script>
 
+    <div id="sidenav"></div>
     <!-- / -->
-    <!--Collapse Button -->
-        <div class="page-sidebar">
-          <div>
-            <nav class="navbar-expand-sm" role="navigation">
-    <button type="button" class="page-navbar-toggler" data-toggle="collapse" data-target="#pageNavCollapse">
-<div style="display: flex; flex-direction: row; margin-bottom: 15px;"><div style="margin-right: 5px;"><i class="material-icons">menu</i></div>
-<div>Menu</div>
-</button>
-    <div class="collapse navbar-collapse" id="pageNavCollapse">
-      <!--flex container holding sidebar-->
 
-        <nav class="hidden-xs-down sidebar">
-          <h2>Present</h2>
-          <ul class="nav nav-pills flex-column">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Photos</a>
-            </li>
+    <!-- flex container holding body content -->
+    <div class="flex-column pl-4 flex-wrap body-members page-content">
 
-          </ul>
-          <h2 style="padding-top: 30px;">Archives</h2>
-          <ul class="nav nav-pills flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Photos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Flyers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Documents</a>
-            </li>
-          </u>
-        </nav>
+      <script>
+        $("a").lightbox();
+        $(window).on("open.lightbox", function() {
+          // ...
+        }).on("close.lightbox", function() {
+          // ...
+        });
+      </script>
+
+
+
+      <div class="gallery">
+
+        <a href="../images/gallery/gallery_	001	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_001	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	002	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	002	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	003	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	003	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	004	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	004	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	005	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	005	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	006	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	006	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	007	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	007	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	008	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	008	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	009	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	009	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	010	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	010	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	011	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	011	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	012	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	012	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	013	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	013	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	014	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	014	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	015	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	015	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	016	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	016	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	017	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	017	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	018	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	018	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	019	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	019	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	020	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	020	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	021	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	021	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	022	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	022	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	023	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	023	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	024	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	024	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	025	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	025	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	026	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	026	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	027	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	027	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	028	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	028	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	029	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	029	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	030	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	030	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	031	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	031	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	032	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	032	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	033	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	033	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	034	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	034	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	035	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	035	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+
+        <a href="../images/gallery/gallery_	036	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	036	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+
+        <a href="../images/gallery/gallery_	037	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	037	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+
+
+        <a href="../images/gallery/gallery_	038	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	038	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+
+        <a href="../images/gallery/gallery_	039	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	039	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+
+        <a href="../images/gallery/gallery_	040	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	040	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+
+        <a href="../images/gallery/gallery_	041	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	041	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+
+        <a href="../images/gallery/gallery_	042	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	042	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+
+        <a href="../images/gallery/gallery_	043	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	043	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+
+        <a href="../images/gallery/gallery_	044	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/gallery/gallery_	044	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
-    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
-    </div>
-      <!-- / flex container holding sidebar-->
-      <!-- flex container holding body content -->
-      <div class="flex-column pl-4 flex-wrap body-members page-content">
-
-        <script src="../lightbox-gallery/js/lightbox-plus-jquery.min.js"></script>
-
-        <div id="wrapper">
-          <!--Gallery Row 1 Start -->
-          <section class="one-third">
-            <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
-          </section>
-          <!--Gallery Row 1 End -->
-
-          <!--Gallery Row 2 Start -->
-          <!--Gallery Row 2 End -->
-
-          <!--Gallery Row 3 Start -->
-          <!--Gallery Row 3 End -->
 
 
 
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
-
-  <!-- footer -->
-  <!-- <script>
+    <!-- footer -->
+    <!-- <script>
     $(function() {
       $("#footer").load("../includes/footer.html");
     });
@@ -154,7 +1331,9 @@
 
   <div id="footer"></div> -->
 
-  <!-- /footer -->
+    <!-- /footer -->
+    <script src="../js/lightbox.js"></script>
 
+</body>
 
 </html>

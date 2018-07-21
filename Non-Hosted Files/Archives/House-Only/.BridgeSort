@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<dirinfo>
+<stack version='1' expanded='false' framerate='2.0' framerateCS6='2.0' >
+<files>
+	<item key='70.jpg20170909173642' />
+	<item key='71.jpg20170909173719' />
+</files>
+<properties>
+	<property key='@collectiontype' value='panorama' type='0' />
+	<property key='@timestamp' value='Mon Jul 16 2018 18:35:32 GMT-0500' type='0' />
+</properties>
+</stack>
+<stack version='1' expanded='false' framerate='2.0' framerateCS6='2.0' >
+<files>
+	<item key='67.jpg20170909173428' />
+	<item key='68.jpg20170909173502' />
+</files>
+<properties>
+	<property key='@collectiontype' value='panorama' type='0' />
+	<property key='@timestamp' value='Mon Jul 16 2018 18:35:32 GMT-0500' type='0' />
+</properties>
+</stack>
+<stack version='1' expanded='false' framerate='2.0' framerateCS6='2.0' >
+<files>
+	<item key='114 - Anne_Esther_Jim_Steve_Bill_Cindy Stegmeier.jpg20170929214731' />
+	<item key='115 - Anne_Esther_Jim_Steve_Bill.jpg20170929214818' />
+</files>
+<properties>
+	<property key='@collectiontype' value='panorama' type='0' />
+	<property key='@timestamp' value='Mon Jul 16 2018 18:35:32 GMT-0500' type='0' />
+</properties>
+</stack>
+<stack version='1' expanded='false' framerate='2.0' framerateCS6='2.0' >
+<files>
+	<item key='175.jpg20170929224800' />
+	<item key='176.jpg20170929224841' />
+</files>
+<properties>
+	<property key='@collectiontype' value='panorama' type='0' />
+	<property key='@timestamp' value='Mon Jul 16 2018 18:35:32 GMT-0500' type='0' />
+</properties>
+</stack>
+<stack version='1' expanded='false' framerate='2.0' framerateCS6='2.0' >
+<files>
+	<item key='218.jpg20171118104940' />
+	<item key='222.jpg20171118110035' />
+</files>
+<properties>
+	<property key='@collectiontype' value='panorama' type='0' />
+	<property key='@timestamp' value='Mon Jul 16 2018 18:35:32 GMT-0500' type='0' />
+</properties>
+</stack>
+<stack version='1' expanded='false' framerate='2.0' framerateCS6='2.0' >
+<files>
+	<item key='90 - Steve.jpg20170909175253' />
+	<item key='91 - Cindy.jpg20170909175346' />
+</files>
+<properties>
+	<property key='@collectiontype' value='panorama' type='0' />
+	<property key='@timestamp' value='Mon Jul 16 2018 18:35:32 GMT-0500' type='0' />
+</properties>
+</stack>
+</dirinfo>

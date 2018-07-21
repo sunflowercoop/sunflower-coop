@@ -44,6 +44,13 @@ h3 {
 
 }
 
+.home-content{
+  display: block;
+  margin-top: 500px;
+  background: white;
+  padding-top: 50px;
+}
+
 .sidebar {
   margin-right: 5px;
 }
@@ -164,17 +171,20 @@ box-shadow: 0px -6px 16px 3px rgba(0,0,0,0.1);
   padding-bottom: 10px;
   padding-top: 0px;
   margin-top: 0px;
-  background-color: var(--color1);
+  /* background-color: var(--color1); */
 }
 
 .dropdown-menu {
-  background-color: var(--color1);
+  /* background-color: var(--color1); */
+  background-color: rgba(48, 46, 43, .3);
   font-family: var(--menu-font);
   border: none;
+  border: collapse;
 }
 
 .dropdown-menu>a:hover {
-  background-color: var(--color1);
+  /* background-color: var(--color1); */
+  background-color: rgba(180, 215, 173, 0);
   color: #f5f8f4;
 }
 
@@ -221,8 +231,9 @@ box-shadow: 0px -6px 16px 3px rgba(0,0,0,0.1);
 .page-sidebar {
   display: flex;
   padding-left: 40px;
-  padding-right: 40px;
+  padding-right: 30px;
   padding-bottom: 10px;
+  width: 190px;
 }
 
 @media (min-width: 576px) {
@@ -274,7 +285,7 @@ box-shadow: 0px -6px 16px 3px rgba(0,0,0,0.1);
 
 /* Header */
 
-.jumbotron-home {
+/* .jumbotron-home {
   background-image: url(../images/jumbotron_home.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -283,6 +294,23 @@ box-shadow: 0px -6px 16px 3px rgba(0,0,0,0.1);
   color: white;
   z-index: -100;
   top: 0;
+} */
+
+.jumbotron-home {
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  position: fixed;
+  background-attachment: fixed;
+    background-image: url(../images/jumbotron_home.jpg);
+  top: 0;
+  right: 0;
+  border: 0;
+  padding-bottom: 50px;
+  color: white;
+  margin-bottom: 50px;
+  display: flex;
 }
 
 .jumbotron-title {
@@ -320,6 +348,7 @@ box-shadow: 0px -6px 16px 3px rgba(0,0,0,0.1);
   /* padding-top: 20px;
   padding-bottom: 5px; */
   text-shadow: 0 0 20px #6e695a;
+  align-self: center;
 }
 
 .jumbotron-home-subtitle {
@@ -373,9 +402,9 @@ box-shadow: 0px -6px 16px 3px rgba(0,0,0,0.1);
   padding-right: 20px;
 }
 
-.fa {
+.fa-footer {
   padding-top: 10px;
-  font-size: 30px;
+  font-size: 16px !important;
   width: 30px;
   height: 30px;
   text-align: center;
@@ -396,6 +425,49 @@ box-shadow: 0px -6px 16px 3px rgba(0,0,0,0.1);
   color: var(--color1);
   text-decoration: none;
 }
+
+
+/* SHIFT */
+nav.shift ul li a {
+  position:relative;
+  z-index: 1;
+}
+nav.shift ul li a:hover {
+  color: #91640F;
+}
+nav.shift ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: var(--color1);
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+nav.shift ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: white;
+}
+
+
 
 /* Home body */
 
@@ -472,10 +544,16 @@ box-shadow: 0px -6px 16px 3px rgba(0,0,0,0.1);
   background-color: rgba(140, 175, 132, 1);
 }
 
-/* Members */
+.jumbotron-gallery {
+  background-image: url(../images/jumbotron_gallery.jpg);
+}
 
 .jumbotron-members {
   background-image: url(../images/jumbotron_members.jpg);
+}
+
+.jumbotron-resources {
+  background-image: url(../images/jumbotron_resources.jpg);
 }
 
 .jumbotron-about {
@@ -798,4 +876,48 @@ transition-delay:.2s;
   width: 279px;
   padding-left: 5px;
   font-family: var(--body-font);
+}
+
+.responsiveCal {
+
+position: relative; padding-bottom: 75%; height: 0; overflow: hidden;
+
+}
+
+.responsiveCal iframe {
+
+position: absolute; top:0; left: 0; width: 100%; height: 100%;
+
+}
+
+
+
+.resource-title {
+  font-family: var(--header-font);
+  color: var(--color1);
+  font-size: 17pt;
+}
+
+.resource-description {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+li {
+  color: var(--color1);
+}
+
+.resource-external-link-icon {
+  font-size: 13pt !important;
+  position: relative;
+  left: -3px;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: inherit;
+  align-items: stretch;
+  align-content: stretch;
 }
