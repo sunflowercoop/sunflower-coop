@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <title>Gallery | Sunflower Co-op</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=BenchNine:700|Kreon|Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Source+Sans+Pro" rel="stylesheet">
+  <link href="../styles/animate.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link href="../styles/index.css" rel="stylesheet">
+  <!--from Lightbox Starter Files-->
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="../lightbox-gallery/css/lightbox.min.css">
+  <script src="js/jquery-1.7.2.min.js"></script>
+  <link href="../styles/lightbox.css" rel="stylesheet" />
+
+
+
+
+</head>
+
+<body>
+
+
+  <!-- navigation -->
+  <script>
+    $(function() {
+      $("#header").load("../includes/header.html");
+    });
+  </script>
+
+  <div id="header"></div>
+  <!-- /Navigation -->
+
+  <!-- jumbotron -->
+  <div class="jumbotron jumbotron-page jumbotron-fluid jumbotron-gallery">
+    <!-- jumbotron title -->
+    <h1 id="page-header" class="display-1 text-center text-uppercase jumbotron-title animated fadeIn">Gallery</h1>
+  </div>
+
+  <script>
+    window.onscroll = function() {
+      myFunction()
+    };
+
+    function myFunction() {
+      if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
+        document.getElementById("page-header").className = "display-1 text-center text-uppercase jumbotron-title animated fadeOut";
+      } else {
+        document.getElementById("page-header").className = "display-1 text-center text-uppercase jumbotron-title animated fadeIn";
+      }
+    }
+  </script>
+  <!-- /jumbotron -->
+
+
+
+  <!-- body -->
+
+  <div class="page-body">
+
+
+    <!--sidenav-->
+    <script>
+      $(function() {
+        $("#sidenav").load("../includes/gallery_sidenav.html");
+      });
+    </script>
+
+    <div id="sidenav"></div>
+    <!-- / -->
+
+    <!-- flex container holding body content -->
+    <div class="flex-column pl-4 flex-wrap body-members page-content">
+
+      <script>
+        $("a").lightbox();
+        $(window).on("open.lightbox", function() {
+          // ...
+        }).on("close.lightbox", function() {
+          // ...
+        });
+      </script>
+
+
+
+
+      <div class="gallery">
+
+        <a href="../images/gallery/gallery_	001.jpg" data-title="Nov 2016 - Photo of the front of the house taken by UT photography Henry Davis for this <a href='http://www.smearmagazine.com/posts/sunflowercoop' target='_blank'>Smear Magazine article.</a>" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_001	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	002	.jpg" data-title="Nov 2016 - Photo of Laura reading in the living room (*so candid*), taken by UT photography Henry Davis for this <a href='http://www.smearmagazine.com/posts/sunflowercoop' target='_blank'>Smear Magazine article.</a>" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	002	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	003	.jpg" data-title="Oct 11, 2017 - Visited by a monarch butterfly during a <a href='https://www.facebook.com/SunflowerCooperative/posts/1517973394963747' target='_blank'>beautiful moment in the garden.</a>" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	003	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	004	.jpg" data-title="Apr 28, 2018 - Group photo during the <a href='https://www.facebook.com/media/set/?set=a.1714159968678421.1073741830.939281449499614&type=1&l=5a219ffe09' target='_blank'>2018 Sunflower Annual General Meeting.</a>" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	004	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	005	.jpg" data-title="Jan 27, 2013 - The original Sunflower founders visiting during the 2013 Annual General Meeting. (Left to Right: Jeff Martin, Michael Owens, Karl Martin, Rich Armington, Vickie Totten)" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	005	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	006	.jpg" data-title="Jan 27, 2013 - Sunflower members during the 2013 Annual General Meeting" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	006	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	007	.jpg" data-title="Apr 21, 2018 - Maya and Daniel weeding during our <a href='#' target='_blank'>spring 2018 workday.</a>" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	007	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	008	.jpg" data-title="Apr 21, 2018 - Devin not letting a recent knee operation stop him from pitching in during our <a href='#' target='_blank'>spring 2018 workday.</a>" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	008	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	009	.jpg" data-title="Apr 21, 2018 - Chris staying active as a Sunflower alumni by lending a hand during our <a href='#' target='_blank'>spring 2018 workday.</a>" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	009	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	010	.jpg" data-title="Apr 2018 - Our beloved perennial poppies beginning to bloom in the garden." data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	010	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	011	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	011	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	012	.jpg" data-title="Apr 21, 2018 - Beth leaf blowing a path while Genevieve works on installing a privacy fence during our spring workday." data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	012	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	013	.jpg" data-title="Spring 2016 - Amanda playing with her son <a href='http://sunflowercoop.blogspot.com/2016/06/sunflower-welcomes-baby-lawson.html' target='blank'>Lawson</a> in the garden. Lawson spent the first year of his life living at Sunflower." data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	013	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	014	.jpg" data-title="Apr 9, 2017 - Group photo from the <a href='https://www.facebook.com/SunflowerCooperative/posts/1335851726509249' target='_blank'>2017 Annual General Meeting.</a>" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	014	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	015	.jpg" data-title="Apr 28, 2018 - Maya preparing some roasted root veggies before an annual meeting." data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	015	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	016	.jpg" data-title="Apr 28, 2018 - Emma and Devin chatting with past Sunflower member, Lauren, at our <a href='https://www.facebook.com/media/set/?set=a.1714159968678421.1073741830.939281449499614&type=1&l=5a219ffe09' target='_blank'>2018 Sunflower Annual General Meeting.</a>" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	016	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	017	.jpg" data-title="Apr 28, 2018 - Maya and past Sunflower member Lauren looking through old Sunflower photo albums at our <a href='https://www.facebook.com/media/set/?set=a.1714159968678421.1073741830.939281449499614&type=1&l=5a219ffe09' target='_blank'>2018 Sunflower Annual General Meeting.</a>" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	017	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	018	.jpg" data-title="Apr 28, 2018 - A cascarones battle in the garden concludes our <a href='https://www.facebook.com/media/set/?set=a.1714159968678421.1073741830.939281449499614&type=1&l=5a219ffe09' target='_blank'>2018 Sunflower Annual General Meeting.</a>" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	018	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	019	.jpg" data-title="Apr 28, 2018 - A cascarones battle in the garden concludes our <a href='https://www.facebook.com/media/set/?set=a.1714159968678421.1073741830.939281449499614&type=1&l=5a219ffe09' target='_blank'>2018 Sunflower Annual General Meeting.</a>" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	019	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	020	.jpg" data-title="Sunflower has shopped at <a href='https://wheatsville.coop/' target='_blank'>Wheatsville Co-op</a> since the very beginning – first at the original north location, and then eventually the South Lamar location after it opened in 2013." data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	020	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	021	.jpg" data-title="Sunflower buys mostly organic, locally-sourced produce each week." data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	021	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	022	.jpg" data-title="Dave completing the house's weekly shopping at <a href='https://wheatsville.coop/' target='_blank'>Wheatsville co-op.</a>" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	022	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	023	.jpg" data-title="May 29, 2018 - Dave modeling with our signature flower!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	023	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	024	.jpg" data-title="May 29, 2018 - Our signature flower." data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	024	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	025	.jpg" data-title="May 20, 2018 - Dave <a href='https://www.facebook.com/SunflowerCooperative/videos/1735709743190110/' target='blank'>watching rain fall</a> onto the bay window in the back house." data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	025	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	026	.jpg" data-title="March 6, 2017 - A <a href='https://www.facebook.com/SunflowerCooperative/posts/1301135079980914' target='blank'>beautiful meal</a> enjoyed before our Monday night meeting, made by Emma." data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	026	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	027	.jpg" data-title="March 25, 2017 - Chris inspecting the garage awning to be demolished during a <a href='https://www.facebook.com/SunflowerCooperative/posts/1319309514830137' target='_blank'>weekend workday.</a>" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	027	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	028	.jpg" data-title="March 25, 2017 - Chris and Laura detaching an awning from the garage during a <a href='https://www.facebook.com/SunflowerCooperative/posts/1319309514830137' target='_blank'>weekend workday.</a>" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	028	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	029	.jpg" data-title="March 25, 2017 - Maya and Ryan working on replacing the garage siding during a <a href='https://www.facebook.com/SunflowerCooperative/posts/1319309514830137' target='_blank'>weekend workday.</a>" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	029	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	030	.jpg" data-title="April 2, 2017 - Triumphant Sunnies after <a href='https://www.facebook.com/SunflowerCooperative/posts/1328517600575995' target='_blank'>clearing a large fallen tree limb</a> only using manual tools." data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	030	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	031	.jpg" data-title="June 20, 2016 - Pickaxe-weilding Chris working with other Sunnies in the garden during a <a href='http://sunflowercoop.blogspot.com/2016/06/sunflower-works-up-sweat-for-spring.html' target='_blank'> spring workday.</a>" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	031	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	032	.jpg" data-title="April 2, 2017 - Chris and Jenna <a href='https://www.facebook.com/SunflowerCooperative/posts/1335800736514348' target='_blank'>picking loquats</a> from the neighborhood park right across from Sunflower." data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	032	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	033	.jpg" data-title="June 2, 2017 - What's better than working from home on a Friday? <a href='https://www.facebook.com/SunflowerCooperative/photos/a.1081489968612094.1073741828.939281449499614/1393835970710824/?type=3' target='_blank'>Co-working from home</a> on a Friday!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	033	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	034	.jpg" data-title="Devin keeping Genevieve cool during an <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>impromptu Labor Day workday.</a>" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	034	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+        <a href="../images/gallery/gallery_	035	.jpg" data-title="Skill-sharing is one awesome perk of co-ops. Here, Genevevieve (a hair stylist in a previous life) cuts Beth's hair in the living room." data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	035	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+
+        <a href="../images/gallery/gallery_	036	.jpg" data-title="Skill-sharing is one awesome perk of co-ops. Here, Genevevieve (a hair stylist in a previous life) cuts Beth's hair in the living room." data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	036	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+
+        <a href="../images/gallery/gallery_	037	.jpg" data-title="Dave striking an epic pose on the front porch  <a href='#' target='_blank'>Halloween 2017.</a>" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	037	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+
+
+        <a href="../images/gallery/gallery_	038	.jpg" data-title="Cozy holiday decorations (complete with real pine tree) for <a href='#' target='_blank'>Christmas 2017.</a>" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	038	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+
+        <a href="../images/gallery/gallery_	039	.jpg" data-title="Ryan practicing his arborist skills in the backyard with Genevieve." data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	039	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+
+        <a href="../images/gallery/gallery_	040	.jpg" data-title="One of our most beloved garden regulars – red poppies." data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	040	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+
+        <a href="../images/gallery/gallery_	041	.jpg" data-title="Bobette's bedroom door suffered from an attack after <a href='#' target='_blank'>origami night.</a>" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	041	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+
+        <a href="../images/gallery/gallery_	042	.jpg" data-title="Nov 2016 - Photo of Laura tending to a plant in her bedroom – taken by UT photography Henry Davis for this <a href='http://www.smearmagazine.com/posts/sunflowercoop' target='_blank'>Smear Magazine article.</a>" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	042	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+
+        <a href="../images/gallery/gallery_	043	.jpg" data-title="Wonderful helpers rejuvinating Sunflower's front yard during a <a href='#' target='_blank'>collaboration with Community Cultivators</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	043	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+
+        <a href="../images/gallery/gallery_	044	.jpg" data-title="Wonderful helpers rejuvinating Sunflower's front yard during a <a href='#' target='_blank'>collaboration with Community Cultivators</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="lazy gallery-thumb" src="../images/gallery/gallery_	044	.jpg">
+          <div class="thumb-overlay">
+        <div class="thumb-text"><i class="fas fa-expand"></i></div>
+        </div>
+        </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+
+
+
+
+    <!-- footer -->
+    <script>
+    $(function() {
+      $("#footer").load("../includes/footer.html");
+    });
+  </script>
+
+  <div id="footer"></div>
+
+    <!-- /footer -->
+    <script src="../js/lightbox.js"></script>
+    <script type="text/javascript" src="jquery.lazy.min.js"></script>
+
+    <script>
+          $(function() {
+               $('.lazy').Lazy();
+           });
+          </script>
+
+
+</body>
+
+</html>
