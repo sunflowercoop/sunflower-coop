@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=BenchNine:700|Kreon|Open+Sans+Condensed:300" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Source+Sans+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Source+Sans+Pro|Alegreya" rel="stylesheet">
   <link href="../styles/animate.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -46,26 +46,43 @@
   <div id="header"></div>
   <!-- /Navigation -->
 
-  <!-- jumbotron -->
-  <div class="jumbotron jumbotron-page jumbotron-fluid jumbotron-archives">
-    <!-- jumbotron title -->
-    <h1 id="page-header" class="display-1 text-center text-uppercase jumbotron-title animated fadeIn">Archives</h1>
+
+    <!-- jumbotron -->
+    <div class="jumbotron jumbotron-page jumbotron-fluid jumbotron-archives">
+      <!-- jumbotron title -->
+      <div id="page-header" class="animated fadeIn"> <h1 class="display-1 text-center text-uppercase jumbotron-title">Archives</h1>
+      <div class="jumbotron-subtitle text-center text-uppercase">Photos: 1980-2000</div>
+    </div>
   </div>
 
-  <script>
-    window.onscroll = function() {
-      myFunction()
-    };
+    <script>
+      window.onscroll = function() {
+        myFunction()
+      };
 
-    function myFunction() {
-      if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
-        document.getElementById("page-header").className = "display-1 text-center text-uppercase jumbotron-title animated fadeOut";
-      } else {
-        document.getElementById("page-header").className = "display-1 text-center text-uppercase jumbotron-title animated fadeIn";
+      function myFunction() {
+        if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
+          document.getElementById("page-header").className = "animated fadeOut";
+        } else {
+          document.getElementById("page-header").className = "animated fadeIn";
+        }
       }
-    }
-  </script>
-  <!-- /jumbotron -->
+    </script>
+
+    <script>
+      window.onscroll = function() {
+        myFunction()
+      };
+
+      function myFunction() {
+        if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
+          document.getElementById("page-header").className = "display-1 text-center text-uppercase jumbotron-title animated fadeOut";
+        } else {
+          document.getElementById("page-header").className = "display-1 text-center text-uppercase jumbotron-title animated fadeIn";
+        }
+      }
+    </script>
+    <!-- /jumbotron -->
 
   <div class="green-bar"></div>
 
@@ -1251,6 +1268,12 @@
 </div>
         <a href="../images/archives/Archives_	226	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/archives/Archives_	226	.jpg">
   <div class="thumb-overlay">
+<div class="thumb-text"><i class="fas fa-expand"></i></div>
+</div>
+</div>
+
+<a href="../images/archives/Archives_	227	.jpg" data-title="Help us <a href='https://goo.gl/forms/EOtNpOpX9bzbPcKR2' target='_blank'>caption this photo</a>!" data-lightbox="archives-photos"> <div class="gallery-thumb-container"><img class="gallery-thumb" src="../images/archives/Archives_	227	.jpg">
+<div class="thumb-overlay">
 <div class="thumb-text"><i class="fas fa-expand"></i></div>
 </div>
 </div>
