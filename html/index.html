@@ -32,8 +32,10 @@
 
 </head>
 
-<body style="min-height: 100vh;">
+<body class="flex-body">
   <!-- navigation -->
+
+  <div class="flex-top">
   <script>
     $(function() {
       $("#header").load("../includes/header.html");
@@ -158,8 +160,8 @@
 </div>
 </div> -->
 
-<div class="home">
-  <div class="above-footer-flexbox">
+
+
 <div class="home-section3">
   <div class="home-section3-row1">
     <div>
@@ -172,16 +174,16 @@
 
       <div class="home-section3-row2">
         <img class="founders-fg" src="../images/founders_fg.png">
-        <img class="founders-bg rellax" data-rellax-speed="-3" src="../images/founders_bg.png">
+        <img class="founders-bg rellax"  src="../images/founders_bg.png">
       </div>
 
-
       <script>
-        var rellax = new Rellax('.rellax', {
+              var rellax = new Rellax('.rellax', {
 
-          callback: function(position) {}
-        });
-      </script>
+                callback: function(position) {}
+              });
+            </script>
+
 
       <div class="clear">
         <!-- -->
@@ -189,10 +191,11 @@
 
     </div>
 
-    </div>
 
+</div>
+</div>
+<div class="flex-bottom">
 
-    <div class="footer-flexbox">
       <!-- footer -->
       <div class="footer navbar-fixed-bottom footer-dark-shadow">
         <div class="container">
@@ -208,9 +211,9 @@
       </div>
 
       <!-- /footer -->
-    </div>
-    </div>
 
+    </div>
+</div>
 
 
 </body>

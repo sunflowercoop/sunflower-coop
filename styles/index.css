@@ -1420,6 +1420,7 @@ a.hover-orange:hover {
 
 .home-section3 {
   background-color: white;
+  overflow: hidden;
 }
 
 .home-section3-row1 h2 {
@@ -1536,7 +1537,7 @@ a.hover-orange:hover {
   display: inline-block;
 }
 
-.home-background {
+/* .home-background {
   background-image: url(../images/petals.jpg);
   /* background-repeat: repeat; */
   background-size: contain;
@@ -1547,7 +1548,7 @@ a.hover-orange:hover {
   height: 1080px;
   width: 100%;
   z-index: -3000;
-  margin-top: 0px;
+  margin-top: 0px; */
 
 }
 
@@ -1563,11 +1564,12 @@ a.hover-orange:hover {
 .founders-fg {
   position: absolute;
   z-index: 100;
-  padding-top: 400px;
+
 }
 
 .founders-bg {
   z-index: -2;
+
 
 
 }
@@ -1589,4 +1591,20 @@ a.hover-orange:hover {
 
 .clear {
     clear:both;
+}
+
+.flex-body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.flex-top {
+  flex: 1;
+
+}
+
+.flex-bottom: {
+  margin-top: auto;
+  align-self: flex-end;
 }
