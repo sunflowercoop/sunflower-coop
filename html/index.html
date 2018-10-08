@@ -26,9 +26,9 @@
   <link href="../styles/lightbox.css" rel="stylesheet" />
 
   <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
-
+  <link rel="stylesheet" href="../styles/aos.css" />
   <script src="../js/rellax.min.js"></script>
-
+  <script src="../js/aos.js"></script>
 
 </head>
 
@@ -47,7 +47,7 @@
 
   <main role="main">
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="position: relative; z-index: 1001;">
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -100,7 +100,7 @@
           <div class="home-section1-row1">
 
 
-            <div class="home-stats animated fadeInDown">
+            <div class="home-stats" data-aos="fade-down" data-aos-duration="600">
               <div class="home-stat-container"><img class="home-icon" src="../images/home_icon_established.png">
                 <p class="home-stats-subtitle">Established<br> 1980</p>
               </div>
@@ -134,7 +134,7 @@
 
       </div>
 
-      <div class="home-section2 flex-row padding-home">
+      <div class="home-section2 padding-home">
         <div class="home-section2-col1">
           <img src="../images/icon_document.svg">
           <!-- <i class="fas fa-book"></i> -->
@@ -148,33 +148,41 @@
 </div>
 
 
-<!-- <img src="../images/home-collage.jpg" style="width: 100%;"> -->
-<!-- <div class="home-collage">
-  <div class="home-collage-container">
-<img class="home-collage1" src="../images/home_1.png">
-<img class="home-collage2" src="../images/home_2.png">
-<img class="home-collage3" src="../images/home_3.png">
-<img class="home-collage4" src="../images/home_4.png">
-<img class="home-collage5" src="../images/home_5.png">
-<img class="home-collage6" src="../images/home_6.png">
-</div>
+<!-- <div class="home-collage" style="position: relative; z-index: 1000;">
+<img data-aos="slide-down" data-aos-duration="3000" data-aos-offset="-150" class="home-collage-fg" src="../images/home-collage-fg.png">
+<img data-aos="slide-down" data-aos-duration="3000" data-aos-offset="-150" class="home-collage-bg" src="../images/home-collage-bg.png">
 </div> -->
+
+<div class="home-collage">
+<img data-aos="slide-down"  data-aos-easing="ease-out-quad" data-aos-duration="1500" data-aos-offset="-150"class="home-collage1" src="../images/home_1.png">
+<img data-aos="slide-down"  data-aos-easing="ease-out-quad" data-aos-duration="1500" data-aos-offset="-50"class="home-collage2" src="../images/home_2.png">
+<img data-aos="slide-down"  data-aos-easing="ease-out-quad" data-aos-duration="1500" data-aos-offset="-100"class="home-collage3" src="../images/home_3.png">
+<img data-aos="slide-down"  data-aos-easing="ease-out-quad" data-aos-duration="1500" data-aos-offset="-75"class="home-collage4" src="../images/home_4.png">
+<img data-aos="slide-down"  data-aos-easing="ease-out-quad" data-aos-duration="1500" data-aos-offset="-150"class="home-collage5" src="../images/home_5.png">
+<img data-aos="slide-down"  data-aos-easing="ease-out-quad" data-aos-duration="1500" data-aos-offset="-175"class="home-collage6" src="../images/home_6.png">
+</div>
 
 
 
 <div class="home-section3">
-  <div class="home-section3-row1">
-    <div>
-
-  <h2><span class="fas fa-map-pin"></span><b> Sunflower’s Founders, 1980</b></h2>
-        </div>
-      </div>
-
-
 
       <div class="home-section3-row2">
-        <img class="founders-fg" src="../images/founders_fg.png">
-        <img class="founders-bg rellax"  src="../images/founders_bg.png">
+
+        <div class="founders-fg">
+
+          <div class="home-section3-row1">
+            <div>
+
+          <h2><span class="fas fa-map-pin"></span><b> Sunflower’s Founders, 1980</b></h2>
+                </div>
+              </div>
+
+
+        <img style="width: 100%;" src="../images/founders_fg.png">
+
+      </div>
+
+        <img class="founders-bg rellax" data-rellax-speed="-3" src="../images/founders_bg.png">
       </div>
 
       <script>
@@ -185,9 +193,7 @@
             </script>
 
 
-      <div class="clear">
-        <!-- -->
-      </div>
+
 
     </div>
 
@@ -214,6 +220,10 @@
 
     </div>
 </div>
+
+<script>
+  AOS.init();
+</script>
 
 
 </body>
