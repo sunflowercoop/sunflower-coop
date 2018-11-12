@@ -67,7 +67,7 @@
           <img class="second-slide" src="../images/home-carousel/home_2.jpg" alt="Second slide">
           <div class="container carousel-container">
             <div class="carousel-caption text-left">
-              <h1>Home to hundreds of Austinites for four decades.</h1>
+              <h1>Providing affordable housing to hundreds of Austinites.</h1>
               <p><a class="btn-orange-empty hover-white" href="./archives.html" role="button">Explore Our History</a></p>
             </div>
           </div>
@@ -141,7 +141,7 @@
           <h2>Documenting Sunflower's Legacy</h2>
         </div>
         <div class="home-section2-col2">
-          <p>The Sunflower History Project began in 2017 in an effort to document Sunflowers’ <span id=”age”>-year legacy. If Sunflower has been part of your life, consider contributing to this documentation!</p>
+          <p>The Sunflower History Project began in 2017 in an effort to document Sunflowers’ <span id="age"></span>&#45;year legacy. If Sunflower has been part of your life, consider helping us document its history!</p>
   <a class="btn-white-empty hover-white" href="./archives.html">View Archives</a>
     <a class="btn-white-empty hover-white" href="./contribute.html">Help Us Tell Our Story</a>
 </div>
@@ -223,6 +223,17 @@
 
 <script>
   AOS.init();
+</script>
+
+<script>
+
+var now = new Date();
+var birth = new Date('1980-09-01');
+var difference = now - birth;
+// var age = new Date(difference).getFullYear() - 1980 +10;
+var age = Math.round(difference * 3.17098e-11);
+
+document.getElementById("age").innerHTML = age;
 </script>
 
 

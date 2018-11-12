@@ -83,7 +83,7 @@
       Sunflower is one of the oldest, continuously operating, independent co-ops in Austin. It was founded in September of 1980 by a group who envisioned establishing a small, vegetarian, independent co-operative. Founding members came from <a href="http://www.iccaustin.coop/hoc/history.html" target="_blank">Prahna House</a>, a student co-op on the UT campus (the predecesor of today's "House of Commons").
 </p>
 <p>
-Over the past __ years, <a href="../html/member-list.html" target="_blank">hundreds of Austinites</a> have called Sunflower home. The care and contribution of those members allowed Sunflower to grow into the mature, wonderful co-op it is today.
+Over the past <span id="age"></span> years, <a href="../html/member-list.html" target="_blank">hundreds of Austinites</a> have called Sunflower home. The care and contribution of those members have allowed Sunflower to grow into the mature, well-established co-op it is today.
 <p>
 In 2017, an initiative to digitize, preserve, and publicly display Sunflower's history began. Co-op member Laura Aavang led the charge by scanning photos, documents, and notes – i.e. the <a href="../html/archives.html" target="_blank">“Sunflower Archives</a> – and creating a website to house them.
 </p>
@@ -91,6 +91,16 @@ In 2017, an initiative to digitize, preserve, and publicly display Sunflower's h
 It is our hope that past, present, and future members may enjoy browsing – and reminiscing over – these special memories. Moreover, we enthusiastically welcome any members who wish to aid our record-keeping by sharing their Sunflower experiences / knowledge. <a href="../html/contribute.html">Check out the many ways to help!</a>
 </p>
 
+<script>
+
+var now = new Date();
+var birth = new Date('1980-09-01');
+var difference = now - birth;
+// var age = new Date(difference).getFullYear() - 1980 +10;
+var age = Math.round(difference * 3.17098e-11);
+
+document.getElementById("age").innerHTML = age;
+</script>
 
 
 </div>
