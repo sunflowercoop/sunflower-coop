@@ -795,6 +795,10 @@ nav ul li a:hover {
   background-image: url(../images/jumbotron_gallery.jpg);
 }
 
+.jumbotron-timeline {
+  background-image: url(../images/jumbotron_timeline.jpg);
+}
+
 .jumbotron-history {
   background-image: url(../images/jumbotron_history.jpg);
 }
@@ -1665,6 +1669,8 @@ a.hover-orange:hover {
   margin-top: 0px; */
 
 }
+
+
 
 #header {
   background-color: white;
