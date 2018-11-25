@@ -902,7 +902,7 @@ nav ul li a:hover {
 
 .parallax-founders-fg {
   background-image: url(../images/founders_fg.png);
-  height: 800px;
+  width: 100%;
   background-size: cover;
   position: relative;
   transform: translateZ(0);
@@ -1699,6 +1699,7 @@ a.hover-orange:hover {
   position: absolute;
   z-index: 100;
   bottom: -50px;
+  width: 100%;
 }
 
 .founders-bg {
