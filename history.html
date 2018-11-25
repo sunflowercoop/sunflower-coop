@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <title>History | Sunflower Co-op</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=BenchNine:700|Kreon|Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Source+Sans+Pro|Alegreya" rel="stylesheet">
+  <link href="./styles/animate.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link href="./styles/index.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+
+  <!-- navigation -->
+  <script>
+    $(function() {
+      $("#header").load("./includes/header.html");
+    });
+  </script>
+
+  <div id="header"></div>
+  <!-- /Navigation -->
+
+  <!-- jumbotron -->
+  <div class="jumbotron jumbotron-page jumbotron-fluid jumbotron-history">
+    <!-- jumbotron title -->
+    <h1 id="page-header" class="display-1 text-center text-uppercase jumbotron-title animated fadeIn">History</h1>
+  </div>
+
+  <script>
+  window.onscroll = function() {myFunction()};
+  function myFunction() {
+      if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
+          document.getElementById("page-header").className = "display-1 text-center text-uppercase jumbotron-title animated fadeOut";
+      } else {
+          document.getElementById("page-header").className = "display-1 text-center text-uppercase jumbotron-title animated fadeIn";
+      }
+  }
+  </script>
+  <!-- /jumbotron -->
+
+    <div class="green-bar"></div>
+
+  <!-- body -->
+    <div class="page-body-no-sidebar" style="padding-top: 100px;">
+
+
+      <div class="history-section1">
+
+
+
+          <div class="history-section1-col1">
+            <div>
+          <img style="width: 100%;" src="./images/archives/Archives_114.jpg">
+        </div>
+        <div class="caption" style="padding-top: 20px;">
+          Two Sunflower founders, Vickie and Rich, with the goat that lived at Sunflower in the 1980's.
+        </div>
+
+
+        </div>
+
+        <div>
+
+      <h2 style="margin-bottom: 20px;">Sunflower Co-op has provided affordable, cooperative housing to Austinites since 1980.</h2>
+      <p>
+
+      Sunflower is one of the oldest, continuously operating, independent co-ops in Austin. It was founded in September of 1980 by a group who envisioned establishing a small, vegetarian, independent co-operative. Founding members came from <a href="http://www.iccaustin.coop/hoc/history.html" target="_blank">Prahna House</a>, a student co-op on the UT campus (the predecesor of today's "House of Commons").
+</p>
+<p>
+Over the past <span id="age"></span> years, hundreds of Austinites have called Sunflower home. The care and contribution of those members have allowed Sunflower to grow into the mature, well-established co-op it is today.
+<p>
+In 2017, an initiative to digitize, preserve, and publicly display Sunflower's history began. Co-op member Laura Aavang led the charge by scanning photos, documents, and notes – i.e. the <a href="./archives.html" target="_blank">“Sunflower Archives</a> – and creating a website to house them.
+</p>
+<p>
+It is our hope that past, present, and future members may enjoy browsing – and reminiscing over – these special memories. Moreover, we enthusiastically welcome any members who wish to aid our record-keeping by sharing their Sunflower experiences / knowledge. <a href="./contribute.html">Check out the many ways to help!</a>
+</p>
+
+<script>
+
+var now = new Date();
+var birth = new Date('1980-09-01');
+var difference = now - birth;
+// var age = new Date(difference).getFullYear() - 1980 +10;
+var age = Math.round(difference * 3.17098e-11);
+
+document.getElementById("age").innerHTML = age;
+</script>
+
+
+</div>
+</div>
+<div style="display: flex; align-items: center; flex-direction: column; justify-content: center;">
+<div style="align-self: center; display: flex; flex-direction: row; margin: 50px 0px 0px 0px; flex-wrap: wrap; justify-content: center;">
+<a style="margin: 10px 10px 10px 10px;" href="./archives.html" class="btn-orange-empty hover-orange" target="_blank">Browse Archives</a>
+<a style="margin: 10px 10px 10px 10px;" href="./timeline.html" class="btn-orange-empty hover-orange" target="_blank">View Timeline</a>
+<a style="margin: 10px 10px 10px 10px;" href="./stories.html" class="btn-orange-empty hover-orange" target="_blank">Read Stories</a>
+<a style="margin: 10px 10px 10px 10px;" href="./contribute.html" class="btn-orange-empty hover-orange" target="_blank">Learn how to Contribute</a>
+</div>
+
+</div>
+</div>
+
+
+  <!-- footer -->
+  <script>
+    $(function() {
+      $("#footer").load("./includes/footer.html");
+    });
+  </script>
+
+  <div id="footer"></div>
+
+  <!-- /footer -->
+
+
+</html>

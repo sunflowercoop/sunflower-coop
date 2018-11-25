@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <title>Resources</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=BenchNine:700|Kreon|Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Source+Sans+Pro|Alegreya" rel="stylesheet">
+  <link href="./styles/index.css" rel="stylesheet">
+  <link href="./styles/animate.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body>
+
+
+<!-- navigation -->
+<script>
+  $(function() {
+    $("#header") .load("./includes/header.html");
+  });
+</script>
+
+<div id="header"></div>
+
+<!-- /navigation -->
+
+<!-- jumbotron -->
+<div class="jumbotron jumbotron-page jumbotron-fluid jumbotron-resources">
+  <!-- jumbotron title -->
+  <h1 id="page-header" class="display-1 text-center text-uppercase jumbotron-title animated fadeIn">Resources</h1>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
+        document.getElementById("page-header").className = "display-1 text-center text-uppercase jumbotron-title animated fadeOut";
+    } else {
+        document.getElementById("page-header").className = "display-1 text-center text-uppercase jumbotron-title animated fadeIn";
+    }
+}
+</script>
+
+<!-- /jumbotron -->
+  <div class="green-bar"></div>
+
+
+<div class="page-body-no-sidebar">
+
+<ul>
+  <li><a class="resource-title" href="http://www.facebook.com/sunflowercooperative" target="_blank">Sunflower Facebook Page<span class="fa resource-external-link-icon">&#xf08e;</span></a>
+    <p class="resource-description">Follow us on Facebook! The best way to keep up-to-date on the latest Sunflower happenings, events, annoucements, and more.</p>
+  </li>
+  <li><a class="resource-title" href="http://www.austincooperatives.coop/" target="_blank">Austin Co-op Directory<span class="fa resource-external-link-icon">&#xf08e;</span></a>
+    <p class="resource-description">A directory of Austin co-operatives, including housing (student & independent), businesses, credit unions, collectives, and community organizations.</p>
+  </li>
+  <li><a class="resource-title" href="http://www.acba.coop/" target="_blank">Austin Cooperative Business Association<span class="fa resource-external-link-icon">&#xf08e;</span></a>
+    <p class="resource-description">The ACBA works to grow and strengthen the Austin-area community through increased consumer knowledge, inter-cooperative support, and advocay to make it easier to start and expand cooperatives.</p>
+  </li>
+  <li><a class="resource-title" href="https://en.wikipedia.org/wiki/Rochdale_Principles" target="_blank">Rochdale Cooperative Principals<span class="fa resource-external-link-icon">&#xf08e;</span></a>
+    <p class="resource-description">The Rochdale Principles are a set of seven ideals for the operation of cooperatives.</p>
+  </li>
+  <li><a class="resource-title" href="http://www.acba.coop/" target="_blank">Cooperative Principles Posters<span class="fa resource-external-link-icon">&#xf08e;</span></a>
+    <p class="resource-description">A series of seven posters representing each of the Principles of Cooperation. The posters were produced by Cooperation Texas and designed by local Austin artist, Christie Zangrilli.</p>
+  </li>
+  <li><a class="resource-title" href="https://www.nasco.coop/about" target="_blank">NASCO (North American Students of Cooperation)<span class="fa resource-external-link-icon">&#xf08e;</span></a>
+    <p class="resource-description">NASCO organizes and educates affordable group equity co-ops and their members for the purpose of promoting a community oriented cooperative movement.</p>
+  </li>
+</ul>
+
+
+</div>
+
+<!-- footer -->
+<script>
+  $(function() {
+    $("#footer") .load("./includes/footer.html");
+  });
+</script>
+
+<div id="footer"></div>
+
+<!-- /footer -->
+
+
+</html>

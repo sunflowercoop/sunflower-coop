@@ -1,0 +1,168 @@
+<!-- ---
+layout: null
+--- -->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <title>Rent | Sunflower Co-op</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=BenchNine:700|Kreon|Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Source+Sans+Pro" rel="stylesheet">
+  <link href="./styles/index.css" rel="stylesheet">
+  <link href="./styles/animate.css" rel="stylesheet">
+  <!-- <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"> -->
+  <!-- <link rel="stylesheet" href={{"/styles/index.css | relative_url"}}> -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- For Includes -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+  </head>
+
+<body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+
+  <!-- navigation -->
+  <script>
+    $(function() {
+      $("#header") .load("./includes/header.html");
+    });
+  </script>
+
+  <div id="header"></div>
+  <!-- /navigation -->
+
+
+  <!-- jumbotron -->
+  <div class="jumbotron jumbotron-page jumbotron-fluid jumbotron-rent">
+    <!-- jumbotron title -->
+    <h1 id="page-header" class="display-1 text-center text-uppercase jumbotron-title animated fadeIn">Pay Rent</h1>
+  </div>
+
+  <script>
+  window.onscroll = function() {myFunction()};
+  function myFunction() {
+      if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
+          document.getElementById("page-header").className = "display-1 text-center text-uppercase jumbotron-title animated fadeOut";
+      } else {
+          document.getElementById("page-header").className = "display-1 text-center text-uppercase jumbotron-title animated fadeIn";
+      }
+  }
+  </script>
+
+  <!-- /jumbotron -->
+
+  <!-- body -->
+
+  <!--flex container holding sidebar and body content-->
+  <div class="page-body">
+    <!-- / -->
+    <!--Collapse Button -->
+        <div class="page-sidebar">
+          <div>
+            <nav class="navbar-expand-sm" role="navigation">
+    <button type="button" class="page-navbar-toggler" data-toggle="collapse" data-target="#pageNavCollapse">
+    <i class="material-icons">menu</i>
+    </button>
+    <div class="collapse navbar-collapse" id="pageNavCollapse">
+      <!--flex container holding sidebar-->
+
+        <nav class="hidden-xs-down sidebar">
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Documents</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./members-rent.html">Pay Rent</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./members-calendar.html">Calendar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Job Rotations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Member Info</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </nav>
+    </div>
+    </div>
+      <!-- / flex container holding sidebar-->
+
+      <!-- flex container holding body content -->
+      <div class="flex-column pl-4 flex-wrap body-members page-content">
+        <h2>$750.00</h2>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+  <input type="hidden" name="cmd" value="_s-xclick">
+  <input type="hidden" name="hosted_button_id" value="VWWQVRQHGRPJL">
+  <table>
+  <tr><td><input type="hidden" name="on0" value="Description">Description</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+  </table>
+  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+  </form>
+<br>
+<p> For all other amounts, go to <span style="text-decoration: underline;">PayPal.Me/sunflowercoop/<span style="color: red;">amount</span></span>. For example, to pay $800, go to <span style="text-decoration: underline;">PayPal.me/sunflowercoop/800</span>.</p>
+
+
+      </div>
+
+
+    </div>
+
+    <!-- Calendar
+<div class="container">
+  <iframe src="https://calendar.google.com/calendar/embed?src=contact%40sunflowercoop.com&ctz=America%2FChicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
+
+-->
+
+
+
+
+
+    <!-- /body -->
+
+    <!-- footer -->
+
+
+    <div class="footer navbar-fixed-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col mx-auto">
+            <div class="container text-center social-icons">
+              <a href="mailto:contact@sunflowercoop.com" target="_blank" class="fa fa-envelope"></a>
+              <a href="https://www.facebook.com/sunflowercooperative" target="_blank" class="fa fa-facebook"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- /footer -->
