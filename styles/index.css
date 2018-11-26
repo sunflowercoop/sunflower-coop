@@ -1700,10 +1700,12 @@ a.hover-orange:hover {
   z-index: 100;
   bottom: -50px;
   width: 100%;
+
 }
 
 .founders-bg {
   z-index: -2;
+  transform: translate3d(0px, 25vw, 0px);
 }
 
 
