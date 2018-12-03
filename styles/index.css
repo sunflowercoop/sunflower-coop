@@ -46,7 +46,6 @@ h2 {
   font-weight: bold;
 }
 
-h3 {}
 
 .home-content {
   display: block;
@@ -86,14 +85,14 @@ h3 {}
   background-color: transparent !important;
 }
 
-.green-bar {
-  /* height: 20px;
+/* .green-bar {
+  height: 20px;
   background-color: var(--color1);
-  width: 100%; */
-  /* -webkit-box-shadow: 0px -6px 16px 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  -webkit-box-shadow: 0px -6px 16px 3px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px -6px 16px 3px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px -6px 16px 3px rgba(0, 0, 0, 0.1); */
-}
+  box-shadow: 0px -6px 16px 3px rgba(0, 0, 0, 0.1);
+} */
 
 a {
   color: var(--color1);
@@ -734,11 +733,10 @@ nav ul li a:hover {
   background-color: rgb(255, 255, 255, .7);
 }
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .home-icon {}
-}
+} */
 
-}
 
 .home-panel {
   height: 300px;
@@ -1087,9 +1085,9 @@ nav ul li a:hover {
     font-size: 12pt;
     padding-left: 0px;
   }
-  .faq-container{
+  /* .faq-container{
 
-  }
+  } */
 }
 
 .table-vacancies-row1 {
@@ -1785,7 +1783,7 @@ a.hover-orange:hover {
 
 }
 
-.flex-bottom: {
+.flex-bottom {
   margin-top: auto;
   align-self: flex-end;
 }
