@@ -1657,7 +1657,7 @@ a.hover-orange:hover {
 
 /* .home-background {
   background-image: url(../images/petals.jpg);
-  /* background-repeat: repeat; */
+  background-repeat: repeat;
   background-size: contain;
   background-repeat: no-repeat;
   position: fixed;
@@ -1666,9 +1666,8 @@ a.hover-orange:hover {
   height: 1080px;
   width: 100%;
   z-index: -3000;
-  margin-top: 0px; */
-
-}
+  margin-top: 0px;
+} */
 
 
 
