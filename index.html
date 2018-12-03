@@ -40,11 +40,7 @@
   <!-- navigation -->
 
   <div class="flex-top">
-    <script>
-      $(function () {
-        $("#header").load("./includes/header.html");
-      });
-    </script>
+
 
     <div id="header"></div>
     <!-- /Navigation -->
@@ -196,12 +192,7 @@
             <img class="founders-bg rellax" data-rellax-speed="-3" src="./images/founders_bg.png">
           </div>
 
-          <script>
-            var rellax = new Rellax('.rellax', {
 
-              callback: function (position) { }
-            });
-          </script>
 
 
 
@@ -232,20 +223,9 @@
   </div>
   </div>
 
-  <script>
-    AOS.init();
-  </script>
 
-  <script>
 
-    var now = new Date();
-    var birth = new Date('1980-09-01');
-    var difference = now - birth;
-    // var age = new Date(difference).getFullYear() - 1980 +10;
-    var age = Math.round(difference * 3.17098e-11);
 
-    document.getElementById("age").innerHTML = age;
-  </script>
 
 
 
@@ -277,19 +257,37 @@
   <!--End mc_embed_signup-->
 
 
-  <!-- </div>
-</div>
+  <!--
 
 <div class="home-section5">
   <div class="home-section5-col2">
   <div>
-    <img src="./images/twin-pines.png" style="max-width: 200px; max-height: 200px;">
+    <img src="./images/twin-pines.png" style="max-width: 200px; max-height: 200px;"/>
   </div>
   <div>
-<h2 style="color: white; font-size: 32pt; padding-top: 10px; font-weight: bold; padding-left: 20px;">Stronger<br> together.</h2>
+<h2 style="color: white; font-size: 32pt; padding-top: 10px; font-weight: bold; padding-left: 20px;">Stronger<br/> together.</h2>
 </div>
 </div>
 </div> -->
+  <script>
+    $(function () {
+      $("#header").load("./includes/header.html");
+    });
+  </script>
+  <script>
+    var now = new Date();
+    var birth = new Date('1980-09-01');
+    var difference = now - birth;
+    // var age = new Date(difference).getFullYear() - 1980 +10;
+    var age = Math.round(difference * 3.17098e-11);
+    document.getElementById("age").innerHTML = age;
+  </script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    var rellax = new Rellax('.rellax');
+  </script>
 </body>
 
 </html>
