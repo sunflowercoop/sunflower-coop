@@ -46,6 +46,7 @@ h2 {
   font-weight: bold;
 }
 
+h3 {}
 
 .home-content {
   display: block;
@@ -85,14 +86,14 @@ h2 {
   background-color: transparent !important;
 }
 
-/* .green-bar {
-  height: 20px;
+.green-bar {
+  /* height: 20px;
   background-color: var(--color1);
-  width: 100%;
-  -webkit-box-shadow: 0px -6px 16px 3px rgba(0, 0, 0, 0.1);
+  width: 100%; */
+  /* -webkit-box-shadow: 0px -6px 16px 3px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px -6px 16px 3px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px -6px 16px 3px rgba(0, 0, 0, 0.1);
-} */
+  box-shadow: 0px -6px 16px 3px rgba(0, 0, 0, 0.1); */
+}
 
 a {
   color: var(--color1);
@@ -651,9 +652,11 @@ nav.shift ul li a {
   position: relative;
   z-index: 1;
 }
+
 nav.shift ul li a:hover {
   color: white;
 }
+
 nav.shift ul li a:after {
   display: block;
   position: absolute;
@@ -671,14 +674,17 @@ nav.shift ul li a:after {
   opacity: 0;
   z-index: -1;
 }
+
 nav.shift ul li a:hover:after {
   opacity: 1;
   visibility: visible;
   height: 100%;
 }
+
 nav ul li a, nav ul li a:after, nav ul li a:before {
   transition: all .5s;
 }
+
 nav ul li a:hover {
   color: white;
 } */
@@ -693,6 +699,7 @@ nav ul li a:hover {
   background-position: center;
   height: 1000px;
 }
+
 .parallax-founders-bg{
   background-image: url(../images/founders_bg.png);
   background-size: 100%;
@@ -727,10 +734,11 @@ nav ul li a:hover {
   background-color: rgb(255, 255, 255, .7);
 }
 
-/* @media (max-width: 576px) {
+@media (max-width: 576px) {
   .home-icon {}
-} */
+}
 
+}
 
 .home-panel {
   height: 300px;
@@ -1079,8 +1087,9 @@ nav ul li a:hover {
     font-size: 12pt;
     padding-left: 0px;
   }
-  /* .faq-container{
-  } */
+  .faq-container{
+
+  }
 }
 
 .table-vacancies-row1 {
@@ -1608,12 +1617,14 @@ a.hover-orange:hover {
   width: auto;
   display: inline-block;
 }
+
 .home-collage2 {
   transform: translate(-230px, -140px);
   position: relative;
   width: auto;
   display: inline-block;
 }
+
 .home-collage3 {
   transform: translate(-490px, -230px);
   position: relative;
@@ -1621,18 +1632,21 @@ a.hover-orange:hover {
   width: auto;
   display: inline-block;
 }
+
 .home-collage4 {
   transform: translate(570px, -695px);
   position: relative;
   width: auto;
   display: inline-block;
 }
+
 .home-collage5 {
   transform: translate(140px, -1000px);
   position: relative;
   width: auto;
   display: inline-block;
 }
+
 .home-collage6 {
   position: relative;
   z-index: -99;
@@ -1643,7 +1657,7 @@ a.hover-orange:hover {
 
 /* .home-background {
   background-image: url(../images/petals.jpg);
-  background-repeat: repeat;
+  /* background-repeat: repeat; */
   background-size: contain;
   background-repeat: no-repeat;
   position: fixed;
@@ -1652,8 +1666,9 @@ a.hover-orange:hover {
   height: 1080px;
   width: 100%;
   z-index: -3000;
-  margin-top: 0px;
-} */
+  margin-top: 0px; */
+
+}
 
 
 
@@ -1690,7 +1705,6 @@ a.hover-orange:hover {
 
 .founders-bg {
   z-index: -2;
-  margin-top: -100px;
 }
 
 
@@ -1763,7 +1777,6 @@ a.hover-orange:hover {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  width: 100%;
 }
 
 .flex-top {
@@ -1771,7 +1784,7 @@ a.hover-orange:hover {
 
 }
 
-.flex-bottom {
+.flex-bottom: {
   margin-top: auto;
   align-self: flex-end;
 }
