@@ -1704,6 +1704,7 @@ a.hover-orange:hover {
 
 .founders-bg {
   z-index: -2;
+  margin-top: -100px;
 }
 
 
@@ -1776,6 +1777,7 @@ a.hover-orange:hover {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  width: 100%;
 }
 
 .flex-top {
