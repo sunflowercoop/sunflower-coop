@@ -254,6 +254,37 @@ document.getElementById("age").innerHTML = age;
 </script>
 
 
+<script>
+     console.log('here');
+     // Devin: Fix Suggestion
+     // Wait for images to load completely before initializing rellax
+     debugger;
+     let isFoundersForegroundLoaded = false;
+     $(".founders-fg").load(function() {
+       debugger;
+       isFoundersForegroundLoaded = true;
+       if (isFoundersForegroundLoaded === true && isFoundersBackgroundLoaded === true) {
+         var rellax = new Rellax('.rellax', {
+                 callback: function(position) {}
+               });
+       }
+     });
+
+     let isFoundersBackgroundLoaded = false;
+     $(".founders-bg").load(function() {
+       debugger;
+       isFoundersBackgroundLoaded = true;
+       if (isFoundersForegroundLoaded === true && isFoundersBackgroundLoaded === true) {
+         var rellax = new Rellax('.rellax', {
+                 callback: function(position) {}
+               });
+       }
+     });
+
+</script>
+</div>
+
+
 </body>
 
 </main>
