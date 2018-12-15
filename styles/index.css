@@ -70,7 +70,7 @@ h3 {}
 }
 
 .home-bg-img2 {
-  background-image: url(../images/jumbotron_home.jpg);
+  background-image: url(https://s3.console.aws.amazon.com/s3/object/sunflower-coop-images/jumbotron_home.jpg);
   background-size: cover;
   position: fixed;
   top: 800px;
@@ -82,7 +82,7 @@ h3 {}
   display: block;
   width: 100%;
   height: 400px;
-  background-image: url(../images/spacer.gif);
+  background-image: url(https://s3.console.aws.amazon.com/s3/object/sunflower-coop-images/spacer.gif);
   background-color: transparent !important;
 }
 
@@ -499,7 +499,7 @@ p, ul, li {
   background-repeat: no-repeat;
   position: fixed;
   background-attachment: fixed;
-  background-image: url(../images/jumbotron_home.jpg);
+  background-image: url(https://s3.console.aws.amazon.com/s3/object/sunflower-coop-images/jumbotron_home.jpg);
   top: 0;
   right: 0;
   border: 0;
@@ -692,7 +692,7 @@ nav ul li a:hover {
 /* Home body */
 
 /* .parallax-founders-fg{
-  background-image: url(../images/founders_fg.png);
+  background-image: url(https://s3.console.aws.amazon.com/s3/object/sunflower-coop-images/founders_fg.png);
   background-color: red !important;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -701,7 +701,7 @@ nav ul li a:hover {
 }
 
 .parallax-founders-bg{
-  background-image: url(../images/founders_bg.png);
+  background-image: url(https://s3.console.aws.amazon.com/s3/object/sunflower-coop-images/founders_bg.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -792,47 +792,47 @@ nav ul li a:hover {
 }
 
 .jumbotron-gallery {
-  background-image: url(../images/jumbotron_gallery.jpg);
+  background-image: url(https://s3.console.aws.amazon.com/s3/object/sunflower-coop-images/jumbotron_gallery.jpg);
 }
 
 .jumbotron-timeline {
-  background-image: url(../images/jumbotron_timeline.jpg);
+  background-image: url(https://s3.console.aws.amazon.com/s3/object/sunflower-coop-images/jumbotron_timeline.jpg);
 }
 
 .jumbotron-history {
-  background-image: url(../images/jumbotron_history.jpg);
+  background-image: url(https://s3.console.aws.amazon.com/s3/object/sunflower-coop-images/jumbotron_history.jpg);
 }
 
 .jumbotron-membership {
-  background-image: url(../images/jumbotron_membership.jpg);
+  background-image: url(https://s3.console.aws.amazon.com/s3/object/sunflower-coop-images/jumbotron_membership.jpg);
 }
 
 .jumbotron-members {
-  background-image: url(../images/jumbotron_members.jpg);
+  background-image: url(https://s3.console.aws.amazon.com/s3/object/sunflower-coop-images/jumbotron_members.jpg);
 }
 
 .jumbotron-members-list {
-  background-image: url(../images/jumbotron_members-list.jpg);
+  background-image: url(https://s3.console.aws.amazon.com/s3/object/sunflower-coop-images/jumbotron_members-list.jpg);
 }
 
 .jumbotron-contribute {
-  background-image: url(../images/jumbotron_contribute.jpg);
+  background-image: url(https://s3.console.aws.amazon.com/s3/object/sunflower-coop-images/jumbotron_contribute.jpg);
 }
 
 .jumbotron-stories {
-  background-image: url(../images/jumbotron_stories.jpg);
+  background-image: url(https://s3.console.aws.amazon.com/s3/object/sunflower-coop-images/jumbotron_stories.jpg);
 }
 
 .jumbotron-resources {
-  background-image: url(../images/jumbotron_resources.jpg);
+  background-image: url(https://s3.console.aws.amazon.com/s3/object/sunflower-coop-images/jumbotron_resources.jpg);
 }
 
 .jumbotron-about {
-  background-image: url(../images/jumbotron_about.jpg);
+  background-image: url(https://s3.console.aws.amazon.com/s3/object/sunflower-coop-images/jumbotron_about.jpg);
 }
 
 .jumbotron-faq {
-  background-image: url(../images/jumbotron_faq.jpg);
+  background-image: url(https://s3.console.aws.amazon.com/s3/object/sunflower-coop-images/jumbotron_faq.jpg);
 }
 
 .body-members {
@@ -842,11 +842,11 @@ nav ul li a:hover {
 /* Rent */
 
 .jumbotron-rent {
-  background-image: url(../images/jumbotron_rent.jpg);
+  background-image: url(https://s3.console.aws.amazon.com/s3/object/sunflower-coop-images/jumbotron_rent.jpg);
 }
 
 .jumbotron-archives {
-  background-image: url(../images/jumbotron_archives.jpg);
+  background-image: url(https://s3.console.aws.amazon.com/s3/object/sunflower-coop-images/jumbotron_archives.jpg);
 }
 
 .body-rent {
@@ -901,7 +901,7 @@ nav ul li a:hover {
 }
 
 .parallax-founders-fg {
-  background-image: url(../images/founders_fg.png);
+  background-image: url(https://s3.console.aws.amazon.com/s3/object/sunflower-coop-images/founders_fg.png);
   width: 100%;
   background-size: cover;
   position: relative;
@@ -911,7 +911,7 @@ nav ul li a:hover {
 }
 
 .parallax-founders-bg {
-  background-image: url(../images/founders_bg.png);
+  background-image: url(https://s3.console.aws.amazon.com/s3/object/sunflower-coop-images/founders_bg.png);
   background-repeat: no-repeat;
   position: absolute;
   background-size: 100%;
@@ -1550,7 +1550,7 @@ a.hover-orange:hover {
 }
 
 .home-section5 {
-  background-image: url(../images/chris_workday.jpg);
+  background-image: url(https://s3.console.aws.amazon.com/s3/object/sunflower-coop-images/chris_workday.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -1656,7 +1656,7 @@ a.hover-orange:hover {
 } */
 
 /* .home-background {
-  background-image: url(../images/petals.jpg);
+  background-image: url(https://s3.console.aws.amazon.com/s3/object/sunflower-coop-images/petals.jpg);
   /* background-repeat: repeat; */
   background-size: contain;
   background-repeat: no-repeat;
