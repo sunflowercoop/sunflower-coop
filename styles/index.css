@@ -633,7 +633,7 @@ p, ul, li {
   margin-right: 5px;
 }
 
-.fa-facebook-f, .fa-envelope {
+.fa-facebook-f, .fa-envelope, .fa-instagram {
   padding-top: 7px;
   background: white;
   color: var(--color1);
