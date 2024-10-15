@@ -1109,7 +1109,7 @@ nav ul li a:hover {
 .table-vacancies-row2 {
   padding-top: 40px;
   padding-bottom: 40px;
-  height: 100%;
+  /* Remove height: 100% to allow natural content flow */
 }
 
 .vacancy-signup-form {
@@ -1792,6 +1792,9 @@ a.hover-orange:hover {
 .membership-section1 {
   display: flex;
   flex-direction: row;
+  justify-content: space-between; /* Ensures the columns are spaced correctly */
+  align-items: flex-start; /* Ensures content in both columns aligns at the top */
+  flex-wrap: wrap; /* Allows the columns to stack on smaller screens */
 }
 
 .membership-section1-col1 {
